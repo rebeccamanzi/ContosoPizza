@@ -4,9 +4,7 @@ namespace ContosoPizza.Services;
 
 public static class PizzaService
 
-// This service provides a simple in-memory data caching service with two pizzas by default. 
-// Our web API uses that service for demo purposes. 
-// When you stop and start the web API, the in-memory data cache is reset to the two default pizzas from the constructor of PizzaService.
+// This service provides a simple in-memory data caching service with two pizzas by default. Our web API uses that service for demo purposes. When you stop and start the web API, the in-memory data cache is reset to the two default pizzas from the constructor of PizzaService.
 {
     static List<Pizza> Pizzas { get; }
     static int nextId = 3;
