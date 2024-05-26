@@ -10,7 +10,7 @@ Accept: application/json
 
 ###
 
-GET {{ContosoPizza_HostAddress}}/pizza/1
+GET {{ContosoPizza_HostAddress}}/pizza/3
 Accept: application/json
 
 ###
@@ -36,3 +36,6 @@ Content-Type: application/json
 
 ###
 
+DELETE {{ContosoPizza_HostAddress}}/pizza/3
+
+###
