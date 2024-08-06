@@ -2,46 +2,40 @@ using ContosoPizza.Models;
 
 namespace ContosoPizza.Services;
 
-public static class PizzaService
-
-// This service provides a simple in-memory data caching service with two pizzas by default. Our web API uses that service for demo purposes. When you stop and start the web API, the in-memory data cache is reset to the two default pizzas from the constructor of PizzaService.
+public class PizzaService
 {
-    static List<Pizza> Pizzas { get; }
-    static int nextId = 3;
-    static PizzaService()
+    public PizzaService()
     {
-        Pizzas = new List<Pizza>
-        {
-            new Pizza { Id = 1, Name = "Classic Italian", IsGlutenFree = false },
-            new Pizza { Id = 2, Name = "Veggie", IsGlutenFree = true }
-        };
+
     }
 
-    public static List<Pizza> GetAll() => Pizzas;
-
-    public static Pizza? Get(int id) => Pizzas.FirstOrDefault(p => p.Id == id);
-
-    public static void Add(Pizza pizza)
+    public IEnumerable<Pizza> GetAll()
     {
-        pizza.Id = nextId++;
-        Pizzas.Add(pizza);
+        throw new NotImplementedException();
     }
 
-    public static void Delete(int id)
+    public Pizza? GetById(int id)
     {
-        var pizza = Get(id);
-        if(pizza is null)
-            return;
-
-        Pizzas.Remove(pizza);
+        throw new NotImplementedException();
     }
 
-    public static void Update(Pizza pizza)
+    public Pizza? Create(Pizza newPizza)
     {
-        var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
-        if(index == -1)
-            return;
+        throw new NotImplementedException();
+    }
 
-        Pizzas[index] = pizza;
+    public void AddTopping(int PizzaId, int ToppingId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void UpdateSauce(int PizzaId, int SauceId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void DeleteById(int id)
+    {
+        throw new NotImplementedException();
     }
 }
