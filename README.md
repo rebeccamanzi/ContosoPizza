@@ -1,7 +1,8 @@
-# ContosoPizza
+# ContosoPizza 🍕
  
-API to Create, Read, Update, and Delete Pizzas 🍕
-With review concepts purpuse, following this [Microsoft Learn Documentation](https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/)
+- API to Create, Read, Update, and Delete Pizzas <br>
+- Data persistency with Entity Framework and SQLite <br>
+- Concepts review purpose <br>
 
 ## Build and test the web API
 
@@ -15,18 +16,13 @@ dotnet run
 https://localhost:7162/Pizza
 ```
 
-### Testing with .http files:
-PS: If you are using Visual Studio Code install the REST Client extension.
-```
-1. Go to ContosoPizza.http file
-2. Choose the endpoint you want to test
-3. Change the attributes, if you want
-4. Click on Send Request
-5. End the current HttpRepl session by using the following command: exit
-```
+## References - Microsoft Learn Documentation
+[Create a web API with ASP.NET Core controllers](https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/) <br>
+[Persist and retrieve relational data by using Entity Framework Core](https://learn.microsoft.com/en-us/training/modules/persist-data-ef-core/) <br>
+
 
 ## Next Steps
-🪄 Persist data by using Entity Framework Core <br>
+🪄 Persist data by using Entity Framework Core ✅ <br> 
 🪄 Add Unit Tests <br>
 
 ## Contributing
