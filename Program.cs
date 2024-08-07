@@ -11,11 +11,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSqlite<PizzaContext>("Data Source=ContosoPizza.db");
 
-// Add the PromotionsContext
-
 builder.Services.AddScoped<PizzaService>();
 
 var app = builder.Build();
+
+app.CreateDbIfNotExists();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
