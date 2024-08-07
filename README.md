@@ -6,15 +6,23 @@
 
 ## Build and test the web API
 
-### Build:
+### Run the API:
 ```
 dotnet run
 ```
 
-### Testing in the browser: <br>
+### Testing with Swagger: <br>
+
+1. In the output that appears after you run the app, find the HTTP URL where the app listens. The output looks similar to the following example:
+
 ```
-https://localhost:7162/Pizza
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5200
 ```
+
+2. To open the URL, select it while holding Ctrl. The browser opens to the / location for the API, which returns the text Contoso Pizza management API. Go to /swagger to open the Swagger test UI.
+
+3. In the browser's address bar, add /swagger to the end of the URL and select Enter.
 
 ## References - Microsoft Learn Documentation
 [Create a web API with ASP.NET Core controllers](https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/) <br>
