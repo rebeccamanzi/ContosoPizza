@@ -1,5 +1,5 @@
 # ContosoPizza 🍕
- 
+
 - API to Create, Read, Update, and Delete Pizzas <br>
 - Data persistency with Entity Framework and SQLite <br>
 - Concepts review purpose <br>
@@ -7,6 +7,7 @@
 ## Build and test the web API
 
 ### Run the API:
+
 ```
 dotnet run
 ```
@@ -25,15 +26,18 @@ info: Microsoft.Hosting.Lifetime[14]
 3. In the browser's address bar, add /swagger to the end of the URL and select Enter.
 
 ## References - Microsoft Learn Documentation
+
 [Create a web API with ASP.NET Core controllers](https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/) <br>
 [Persist and retrieve relational data by using Entity Framework Core](https://learn.microsoft.com/en-us/training/modules/persist-data-ef-core/) <br>
 
-
 ## Next Steps
-🪄 Persist data by using Entity Framework Core ✅ <br> 
+
+🪄 Persist data by using Entity Framework Core ✅ <br>
 🪄 Add Unit Tests <br>
+🪄 Create a Web App to consume the API <br>
 
 ## Contributing
+
 ```
 - Fork it -> https://github.com/rebeccamanzi/ContosoPizza/fork
 - Create your feature branch (git checkout -b feature/fooBar)
